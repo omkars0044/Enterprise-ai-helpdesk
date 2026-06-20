@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 95% 97%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+    --radius: 0.625rem;
+
+    --corp-green: 142 72% 29%;
+    --corp-green-light: 138 76% 97%;
+    --corp-amber: 32 95% 44%;
+    --corp-amber-light: 48 96% 97%;
+    --corp-red: 0 72% 51%;
+    --corp-red-light: 0 86% 97%;
+    --corp-teal: 173 77% 26%;
+    --corp-teal-light: 166 76% 97%;
+    --corp-purple: 263 70% 58%;
+    --corp-purple-light: 263 87% 97%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 95% 97%;
+    --sidebar-accent-foreground: 221 83% 53%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+  }
+}
+
+@layer utilities {
+  .corp-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .corp-shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+  }
+  .text-table-cell {
+    font-size: 0.875rem; /* 14px */
+  }
+  .text-label-badge {
+    font-size: 0.75rem; /* 12px */
+  }
+}
